@@ -1,10 +1,7 @@
 name = "Serval"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
+licenselink = "https://github.com/styler3/serval-hugo-theme/blob/master/LICENSE.md"
+description = "A simple, minimal and responsive theme"
 min_version = 0.18
 
 [author]
