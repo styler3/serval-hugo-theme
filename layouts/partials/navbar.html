@@ -1,0 +1,11 @@
+<nav>
+  <a href="{{ .Site.BaseURL }}" class="logo">
+    <img src="{{ .Site.BaseURL }}/logo.jpg" alt="{{ .Site.Title }}">
+  </a>
+  <ul>
+  {{ range .Site.Menus.main }}
+    <li><a href="{{.URL}}">{{ .Name }}</a></li>
+  {{ end }}
+  </ul>
+</nav>
+<hr>

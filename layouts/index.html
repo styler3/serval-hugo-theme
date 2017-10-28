@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+
+  {{ partial "navbar.html" . }}
+
+  {{ range .Paginator.Pages }}
+  <article>
+    <header>
+      <h2>{{ .Title }}</h2>
+      <p class="by-line">
+        {{ if .Params.author }}
+          By {{ .Params.author }} on
+        {{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January, 2006" }}</time>
+      </p>
+    </header>
+    <p>{{ .Summary }} <a href="{{ .Permalink }}">Read more</a></p>
+  </article>
+  {{ end }}
+
+  <div class="navigation">
+  {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}">Newer Posts</a>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}">Older Posts</a>
+  {{ end }}
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>
