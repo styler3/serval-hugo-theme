@@ -52,6 +52,15 @@ main {
   margin-bottom: 2em;
 }
 
+img {
+  margin: 2em auto;
+  text-align: center;
+}
+
+a.logo img {
+  margin: 0;
+}
+
 article { /* Articles on index page */
   margin-bottom: 2em;
 }
