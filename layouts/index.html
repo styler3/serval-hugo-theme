@@ -19,7 +19,7 @@
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January, 2006" }}</time>
       </p>
     </header>
-    <p>{{ .Summary }} <a href="{{ .Permalink }}">Read more</a></p>
+    <p>{{ .Summary }} <a href="{{ .RelPermalink }}">Read more</a></p>
   </article>
   {{ end }}
 
